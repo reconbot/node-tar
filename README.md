@@ -2,7 +2,7 @@
 
 Tar for Node.js. Fork from [npm/tar](https://github.com/npm/node-tar) that cleans up a few things for use in strict mode and es modules. The goal of this project is to disappear eventually.
 
-[![NPM](https://nodei.co/reconbot/tar-esnext.png)](https://nodei.co/reconbot/tar-esnext/)
+[![NPM](https://nodei.co/npm/tar-esnext.png)](https://nodei.co/npm/tar-esnext/)
 
 ## API
 
