@@ -1,14 +1,14 @@
-# node-tar
+# node-tar-esnext
 
-Tar for Node.js.
+Tar for Node.js. Fork from [npm/tar](https://github.com/npm/node-tar) that cleans up a few things for use in strict mode and es modules. The goal of this project is to disappear eventually.
 
-[![NPM](https://nodei.co/npm/tar.png)](https://nodei.co/npm/tar/)
+[![NPM](https://nodei.co/reconbot/tar-esnext.png)](https://nodei.co/reconbot/tar-esnext/)
 
 ## API
 
 See `examples/` for usage examples.
 
-### var tar = require('tar')
+### var tar = require('tar-esnext')
 
 Returns an object with `.Pack`, `.Extract` and `.Parse` methods.
 
