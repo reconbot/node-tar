@@ -12,7 +12,7 @@ process.on("exit", function () {
 
 
 var tap = require("tap")
-  , tar = require("../tar.js")
+  , tar = require("../tar")
   , pkg = require("../package.json")
   , Pack = tar.Pack
   , fstream = require("fstream")

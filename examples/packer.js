@@ -1,4 +1,4 @@
-var tar = require("../tar.js")
+var tar = require("../tar")
   , fstream = require("fstream")
   , fs = require("fs")
 

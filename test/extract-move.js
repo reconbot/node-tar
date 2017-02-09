@@ -2,7 +2,7 @@
 process.umask(parseInt('22', 8))
 
 var tap = require("tap")
-  , tar = require("../tar.js")
+  , tar = require("../tar")
   , fs = require("fs")
   , gfs = require("graceful-fs")
   , path = require("path")

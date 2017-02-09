@@ -1,6 +1,6 @@
 var tap = require("tap")
-var TarHeader = require("../lib/header.js")
-var tar = require("../tar.js")
+var TarHeader = require("../lib/header")
+var tar = require("../tar")
 var fs = require("fs")
 
 

@@ -1,5 +1,5 @@
 var tap = require("tap")
-  , tar = require("../tar.js")
+  , tar = require("../tar")
   , fs = require("fs")
   , path = require("path")
   , file = path.resolve(__dirname, "fixtures/c.tar")

@@ -1,4 +1,4 @@
-var tar = require("../tar.js")
+var tar = require("../tar")
   , fs = require("fs")
 
 fs.createReadStream(__dirname + "/../test/fixtures/c.tar")

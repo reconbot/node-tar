@@ -1,5 +1,5 @@
 var tap = require("tap")
-  , tar = require("../tar.js")
+  , tar = require("../tar")
   , fs = require("fs")
   , path = require("path")
   , file = path.resolve(__dirname, "fixtures/c.tar")
@@ -20,10 +20,10 @@ tap.test("parser test", function (t) {
     .pipe(parser)
     .on('entry',function(entry){
       if(entry.path === 'c.txt') entry.abort()
-      
+
       total += entry.size;
       entry.on('data',function(data){
-        dataTotal += data.length        
+        dataTotal += data.length
       })
     })
 })

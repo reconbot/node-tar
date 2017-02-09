@@ -170,6 +170,6 @@ exports.headerSize = headerSize
 exports.blockSize = blockSize
 exports.knownExtended = knownExtended
 
-exports.Pack = require("./lib/pack.js")
-exports.Parse = require("./lib/parse.js")
-exports.Extract = require("./lib/extract.js")
+exports.Pack = require("./lib/pack")
+exports.Parse = require("./lib/parse")
+exports.Extract = require("./lib/extract")
