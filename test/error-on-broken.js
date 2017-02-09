@@ -18,11 +18,18 @@ tap.test('preclean', function (t) {
 tap.test('extract test', function (t) {
   var extract = tar.Extract(target)
   var inp = fs.createReadStream(file)
+  var unzip = zlib.createGunzip()
 
-  inp.pipe(zlib.createGunzip()).pipe(extract)
+  inp.pipe(unzip).pipe(extract)
+
+  // on node 6 the error isn't propagated to tar
+  unzip.on('error', function (er) {
+    t.ok((/unexpected (eof|end of file)/).test(er.message), 'zlib noticed the error')
+    t.end()
+  })
 
   extract.on('error', function (er) {
-    t.equal(er.message, 'unexpected eof', 'error noticed')
+    t.ok((/unexpected (eof|end of file)/).test(er.message), 'tar noticed the error')
     t.end()
   })
 
